@@ -1,5 +1,6 @@
 import { Caladea, Mulish, Inter } from "next/font/google";
 import { CiMenuBurger } from "react-icons/ci";
+import ContactButton from "./ContactButton";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -40,7 +41,7 @@ function Navbar() {
         </div>
 
         <div className="hidden h-full md:flex items-center">
-           <button className={`${inter.className} text-white px-4 py-[5px] rounded-lg bg-[#6C63FF] hover:bg-[#695997] transition-colors ease-in-out duration-150 cursor-pointer`}>Contact</button>
+           <ContactButton/>
         </div>
 
         <div className="md:hidden h-full flex items-center">

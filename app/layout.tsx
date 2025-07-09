@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Caladea, Mulish, Inter } from "next/font/google";
 import "./globals.css";
+import { Caladea, Mulish, Inter } from "next/font/google";
 
 const inter = Inter({
   subsets: ['latin'],
