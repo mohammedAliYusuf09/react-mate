@@ -72,5 +72,10 @@ box-shadow: 4px 4px 2px 0px rgba(130,109,109,0.29);
 -moz-box-shadow: 4px 4px 2px 0px rgba(130,109,109,0.29);
 }
 
+.price-bg{
+background: #DDEB9D;
+background: linear-gradient(123deg,rgba(221, 235, 157, 1) 2%, rgba(131, 123, 250, 1) 35%, rgba(131, 123, 250, 1) 66%, rgba(221, 235, 157, 1) 92%);
+}
+
 
 

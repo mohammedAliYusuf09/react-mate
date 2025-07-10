@@ -2,6 +2,7 @@ import ClientLogo from "@/components/ClientLogo";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Portfolio from "@/components/Portfolio";
+import Pricing from "@/components/Pricing";
 import Services from "@/components/Services";
 import Testimonial from "@/components/Testimonial";
 import Why from "@/components/Why";
@@ -17,6 +18,7 @@ export default function Home() {
       <Why/>
       <Testimonial/>
       <Portfolio/>
+      <Pricing/>
     </>
   );
 }
