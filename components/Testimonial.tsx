@@ -148,7 +148,7 @@ const testimonials: TestimonialItem[] = [
 
 function Testimonial() {
   return (
-    <div className="responsive-container">
+    <div className="responsive-container mb-8">
       <div className="px-10 md:flex">
         <div className="md:w-[50%]">
           <DarkHeading>

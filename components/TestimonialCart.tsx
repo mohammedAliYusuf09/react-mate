@@ -1,5 +1,4 @@
 import { Mulish } from "next/font/google";
-import ClientP from "@/public/assets/clients-image/client1.png"
 import Image from "next/image";
 import { TestimonialItem } from "./Testimonial";
 
