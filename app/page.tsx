@@ -1,3 +1,4 @@
+import ActionSection from "@/components/ActionSection";
 import ClientLogo from "@/components/ClientLogo";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -19,6 +20,7 @@ export default function Home() {
       <Testimonial/>
       <Portfolio/>
       <Pricing/>
+      <ActionSection/>
     </>
   );
 }
