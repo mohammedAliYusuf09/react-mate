@@ -3,7 +3,7 @@
 import { Mulish, Inter } from "next/font/google";
 import { CiMenuBurger } from "react-icons/ci";
 import ContactButton from "./ContactButton";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { easeInOut, motion, useMotionValueEvent, useScroll } from "motion/react"
 
 const inter = Inter({
@@ -19,11 +19,6 @@ const mulish = Mulish({
   display: 'swap',
 });
 
-
-
-
-
-
 function Navbar() {
 
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -31,9 +26,9 @@ function Navbar() {
   const {scrollY} = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    if(latest > 20){
-      setScrolled(true);
-    }
+
+    setScrolled(latest > 20 ? true : false);
+    
 
     const pre = scrollY.getPrevious();
     if (pre !== undefined && latest > pre && latest > 150) {

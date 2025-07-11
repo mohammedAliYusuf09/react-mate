@@ -1,5 +1,5 @@
 import Image from "next/image"
-import heroImage from "@/public/assets/hero-image-final.png"
+import heroImage from "@/public/hero-img.svg"
 import { Caladea, Mulish } from "next/font/google";
 import ActionButton from "./ActionButton";
 
@@ -17,7 +17,8 @@ const mulish = Mulish({
 
 function Hero() {
   return (
-    <div className="responsive-container md:flex md:flex-row md:gap-2 md:h-[500px] lg:h-[600px] items-center">
+    <div className="bg-grid-white">
+      <div className="responsive-container md:flex md:flex-row md:gap-2 md:h-[500px] lg:h-[600px] items-center">
 
       <div className="md:w-[60%] flex flex-col gap-4 md:gap-8">
         <h1 className={`text-[#2F2E41] text-4xl sm:text-5xl md:text-5xl lg:text-6xl text-center md:text-start mt-4 pt-10 md:pt-0 md:mt-0 ${caladea.className} text-bold`}>Grow Your Business with Results-Driven Digital Marketing</h1>
@@ -31,6 +32,8 @@ function Hero() {
       <Image className="md:w-[40%] md:h-[22rem] pt-10 md:pt-0 m-auto"  src={heroImage} alt="Hero Image" />
       
     </div>
+    </div>
+    
   )
 }
 
