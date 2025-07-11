@@ -1,4 +1,4 @@
-import { Caladea, Mulish, Inter } from "next/font/google";
+import {  Inter } from "next/font/google";
 import DarkHeading from "./DarkHeading";
 import PriceCart from "./PriceCart";
 
@@ -9,17 +9,7 @@ const inter = Inter({
 });
 
 
-const mulish = Mulish({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'], // Add weights you plan to use
-  display: 'swap',
-});
 
-const caladea = Caladea({
-  subsets: ["latin"],
-  weight: ["400", "700"], // You can also add "italic", "700italic" if needed
-  display: "swap",
-});
 
 
 export interface PricePackage {
@@ -83,7 +73,7 @@ function Pricing() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 md:mt-10 mt-6 items-center justify-center mx-12">
           {prices.map((price, idx) => (
-            <PriceCart key={price.package} info={price} />
+            <PriceCart key={idx} info={price} />
           ))}
         </div>
 

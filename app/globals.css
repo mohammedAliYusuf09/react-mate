@@ -40,8 +40,8 @@ body {
 .bg-grid-blue {
   background-color: #007bff; /* Base blue background */
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    linear-gradient(to right, #ffffff0d 1px, transparent 1px),
+    linear-gradient(to bottom, #ffffff0d 1px, transparent 1px);
   background-size: 64px 64px; /* Size of each grid cell */
   margin: 0;
 }

@@ -1,5 +1,6 @@
 import ActionSection from "@/components/ActionSection";
 import ClientLogo from "@/components/ClientLogo";
+import FAQ from "@/components/FAQ";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Portfolio from "@/components/Portfolio";
@@ -7,7 +8,6 @@ import Pricing from "@/components/Pricing";
 import Services from "@/components/Services";
 import Testimonial from "@/components/Testimonial";
 import Why from "@/components/Why";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -21,6 +21,7 @@ export default function Home() {
       <Portfolio/>
       <Pricing/>
       <ActionSection/>
+      <FAQ/>
     </>
   );
 }
