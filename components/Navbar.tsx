@@ -1,4 +1,4 @@
-import { Caladea, Mulish, Inter } from "next/font/google";
+import { Mulish, Inter } from "next/font/google";
 import { CiMenuBurger } from "react-icons/ci";
 import ContactButton from "./ContactButton";
 
@@ -15,11 +15,7 @@ const mulish = Mulish({
   display: 'swap',
 });
 
-const caladea = Caladea({
-  subsets: ["latin"],
-  weight: ["400", "700"], // You can also add "italic", "700italic" if needed
-  display: "swap",
-});
+
 
 
 function Navbar() {
