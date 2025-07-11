@@ -17,9 +17,9 @@ function Footer() {
   return (
     <div className="responsive-container">
       <div className={`${mulish.className} `}>
-        <div className="border-t border-[#716f9c] flex py-6">
+        <div className="border-t border-[#716f9c] flex flex-col gap-3 sm:gap-0 sm:flex-row py-6">
           
-          <div className="flex flex-col gap-2 w-[60%] justify-center">
+          <div className="flex flex-col gap-2 sm:w-[60%] justify-center">
             <p className={`flex items-center ${inter.className}"`}>
             <span className="bg-[var(--color-action)] text-white px-2 rounded-3xl">
               Reach
@@ -27,9 +27,10 @@ function Footer() {
             MATE
             </p>
             <h6 className={`${inter.className} font-semibold`}>reachmate@gmail.com</h6>
+            <h6 className={`${inter.className} font-semibold`}>© 2025 Yusuf Ali. All rights reserved.</h6>
           </div>
 
-          <div className="w-[40%] grid grid-cols-2 grid-rows-5 gap-2">
+          <div className="sm:w-[40%] grid grid-cols-2 grid-rows-5 gap-2">
                <a href="hero">Hero</a>
                <a href="services">Services</a>
                <a href="stories">Stories</a>

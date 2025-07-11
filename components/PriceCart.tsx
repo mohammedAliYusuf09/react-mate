@@ -34,7 +34,7 @@ function PriceCart({info} : {info: PricePackage}) {
               Features:
             </h6>
 
-            <div className="mt-1 h-[200px] flex flex-col gap-1.5">
+            <div className="mt-1 min-h-[200px] flex flex-col gap-1.5">
               {info.features.map((feature, idx) => (
                 <div className="flex gap-2" key={idx}>
                   <div>

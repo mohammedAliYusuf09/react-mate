@@ -13,7 +13,7 @@ type DarkHeadingProps = {
 
 function DarkHeading({ children }: DarkHeadingProps) {
   return (
-    <h2 className={`${caladea.className} text-3xl `}>{children}</h2>
+    <h2 className={`${caladea.className} text-3xl`}>{children}</h2>
   );
 }
 

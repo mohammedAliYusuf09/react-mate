@@ -63,7 +63,7 @@ const prices: PricePackage[] = [
 
 function Pricing() {
   return (
-    <div className="responsive-container md:py-16 py-5">
+    <div id="pricing" className="responsive-container md:py-16 py-5">
       <div className="flex flex-col items-center gap-4">
         <span className={`bg-amber-200 px-2 rounded ${inter.className} text-[#6C63FF]`}>PACKAGES &</span>
         <DarkHeading>
