@@ -65,7 +65,16 @@ function Hero() {
         }}
         className="flex flex-col md:flex-row gap-4 items-center">
           <ActionButton/>
-          <a className={`${mulish.className} border-b border-[#DDEB9D] hover:border-[#a0ac6a]`} href="#portfolio">Scrolls to portfolio</a>
+          <motion.a 
+          animate={{ scale: [1, 1.1, 1] }} 
+          transition={{
+            duration: 1,         
+            repeat: Infinity,    
+            repeatDelay: 2,      
+            type: "tween",       
+            ease: "easeInOut",   
+          }}
+          className={`${mulish.className} border-b border-[#DDEB9D] hover:border-[#a0ac6a]`} href="#portfolio">Scrolls to portfolio</motion.a>
         </motion.div>
       </div>
 
