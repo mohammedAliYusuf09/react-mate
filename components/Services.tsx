@@ -125,7 +125,7 @@ function Services() {
                   <div className="flex flex-col gap-3 md:w-[75%] z-10">
                     <h5 className={`${inter.className} text-white`}>SERVICE THREE</h5>
                     <h4 className={`${caladea.className} text-xl text-white`}>Content Marketing</h4>
-                    <p className={`${mulish.className} text-[#066FE0] text-white`}>Engage and educate your audience. We craft high-value blogs, articles, and content strategies that build trust and authority.</p>
+                    <p className={`${mulish.className} text-white`}>Engage and educate your audience. We craft high-value blogs, articles, and content strategies that build trust and authority.</p>
                   </div>
 
                   <div className="flex justify-end z-0">

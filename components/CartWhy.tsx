@@ -1,5 +1,4 @@
 import Image from "next/image"
-import Confi from "@/public/assets/confi.png"
 import { Mulish, Inter } from "next/font/google";
 import { WhyCardData } from "./Why";
 

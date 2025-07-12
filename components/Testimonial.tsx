@@ -1,7 +1,8 @@
+import { StaticImageData } from "next/image";
+import { Mulish } from "next/font/google";
 import ActionButton from "./ActionButton";
 import ContactButton from "./ContactButton";
 import DarkHeading from "./DarkHeading"
-import { Mulish } from "next/font/google";
 import TestimonialCart from "./TestimonialCart";
 
 import client1 from "@/public/assets/clients-image/client1.png"
@@ -16,7 +17,6 @@ import client9 from "@/public/assets/clients-image/client9.jpg"
 import client10 from "@/public/assets/clients-image/client10.jpg"
 import client11 from "@/public/assets/clients-image/client11.jpg"
 import client12 from "@/public/assets/clients-image/client12.jpg"
-import { StaticImageData } from "next/image";
 
 
 
@@ -145,10 +145,10 @@ function Testimonial() {
           <DarkHeading>
             What Our Clients Say About Working With Us
           </DarkHeading>
-          <p className={`${mulish.className} font-semibold`}>Hear from the people we've helped grow.</p>
+          <p className={`${mulish.className} font-semibold`}>Hear from the people we&rsquo;ve helped grow.</p>
         </div>
         <div className="md:w-[50%]">
-          <p className={`${mulish.className} font-normal`}>We’ve helped businesses grow through smart, results-driven marketing. Here’s what they say.</p>
+          <p className={`${mulish.className} font-normal`}>We&rsquo;ve helped businesses grow through smart, results-driven marketing. Here&rsquo;s what they say.</p>
           <div className="flex gap-4 mt-2">
             <ActionButton/>
             <ContactButton/>
