@@ -27,7 +27,7 @@ function ClientLogo() {
     }}
 
     
-    className="responsive-container flex gap-4 md:gap-10 items-center justify-center mt-4 md:mt-0 pb-10">
+    className="responsive-container flex gap-4 md:gap-10 items-center justify-center mt-4 md:mt-0 pb-10 overflow-hidden">
       <Image className="logo-image" src={LogoA} alt="logo a"/>
       <Image className="logo-image" src={LogoB} alt="logo b"/>
       <Image className="logo-image" src={LogoD} alt="logo d"/>

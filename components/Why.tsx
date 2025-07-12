@@ -1,11 +1,14 @@
+"use client"
+
 import { Caladea, Mulish, Inter } from "next/font/google";
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 import CartWhy from "./CartWhy";
 import Confi from "@/public/assets/confi.png"
 import RT from "@/public/assets/relabletrusted.png"
 import VAL from "@/public/assets/value.png"
 import FP from "@/public/assets/firndlyprofetional.png"
 import DarkHeading from "./DarkHeading";
+import {easeIn, motion} from "motion/react"
 
 const inter = Inter({
   subsets: ['latin'],
@@ -58,45 +61,150 @@ export const whyCards: WhyCardData[] = [
 
 function Why() {
   return (
-    <div className="responsive-container flex md:flex-row flex-col  py-10 md:h-[700px]">
+    <div className="responsive-container flex md:flex-row flex-col  py-10 md:h-[700px] overflow-hidden">
       <div className="md:w-[40%]">
-        <h6 className={`${inter.className} text-[#5FA1E7]`}>What Matters</h6>
+        <motion.h4 
+        initial={{
+          opacity: 0.3,
+          scale: 0.2
+        }}
+
+        whileInView={{
+          opacity: 1,
+          scale: 1
+        }}
+
+        transition={{
+          type: "spring",
+          ease: easeIn,
+          duration: 0.6,
+          delay: 0.5
+        }}
+        
+        className={`${inter.className} text-[#5FA1E7]`}>What Matters</motion.h4>
         <div className="py-4">
           <DarkHeading>
           Why Choose Us
         </DarkHeading>
         </div>
         
-        <p className={`${mulish.className} text-lg`}>We combine strategy, creativity, and data-driven decisions to help your business grow with confidence. Here’s what sets us apart.</p>
+        <motion.p 
+        initial={{
+          opacity: 0,
+          x: "-100%"
+        }}
+
+        whileInView={{
+          opacity: 1,
+          x: 0
+        }}
+
+        transition={{
+          ease: easeIn,
+          duration: 0.6,
+          delay: 0.5
+        }}
+        className={`${mulish.className} text-lg`}>
+          We combine strategy, creativity, and data-driven decisions to help your business grow with confidence. Here’s what sets us apart.
+        </motion.p>
       </div>
 
         <div className="md:w-[60%]">
           <div className="flex pt-10 md:pt-32 w-full">
             <div className="pr-3 pt-6 md:pt-20 flex flex-col w-[50%]">
-                <div className="pb-3 flex gap-2">
+                <motion.div 
+
+                initial={{
+                  opacity: 0.4,
+                  x: "-100%"
+                }}
+
+                whileInView={{
+                  opacity: 1,
+                  x: 0
+                }}
+
+                transition={{
+                  ease: easeIn,
+                  duration: 0.6,
+                  delay: 0.2
+                }}
+                
+                
+                className="pb-3 flex gap-2">
                   <CartWhy info={whyCards[0]}/>
-                </div>
+                </motion.div>
 
                 <span className="w-full h-[1px] border-left-to-right"/>
 
-                <div className="flex gap-2 mt-2">
+                <motion.div 
+                initial={{
+                  opacity: 0.4,
+                  x: "-100%"
+                }}
+
+                whileInView={{
+                  opacity: 1,
+                  x: 0
+                }}
+
+                transition={{
+                  ease: easeIn,
+                  duration: 0.6,
+                  delay: 0.2
+                }}
+                
+                className="flex gap-2 mt-2">
                   <CartWhy info={whyCards[1]}/>
-                </div>
+                </motion.div>
             </div>
 
             <span className="w-[1px] h-[400px] border-bg"/>
 
 
             <div className="pl-3 w-[50%] flex flex-col">
-              <div className="border-b border-blue-400 pb-3 flex gap-2">
+              <motion.div 
+              initial={{
+                  opacity: 0.4,
+                  x: "-100%"
+                }}
+
+                whileInView={{
+                  opacity: 1,
+                  x: 0
+                }}
+
+                transition={{
+                  ease: easeIn,
+                  duration: 0.6,
+                  delay: 0.3
+                }}
+
+              className="border-b border-blue-400 pb-3 flex gap-2">
                 <CartWhy info={whyCards[2]}/>
-              </div>
+              </motion.div>
 
               <span className="w-full border-right-to-left"/>
 
-              <div className="flex gap-2 mt-2">
+              <motion.div 
+              initial={{
+                  opacity: 0.4,
+                  x: "100%"
+                }}
+
+                whileInView={{
+                  opacity: 1,
+                  x: 0
+                }}
+
+                transition={{
+                  ease: easeIn,
+                  duration: 0.6,
+                  delay: 0.4
+                }}
+              className="flex gap-2 mt-2">
                 <CartWhy info={whyCards[3]}/>
-              </div>
+              </motion.div>
           </div>
 
         </div>

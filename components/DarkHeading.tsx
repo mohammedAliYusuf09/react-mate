@@ -1,4 +1,7 @@
+"use client"
+
 import { Caladea } from "next/font/google";
+import {easeIn, motion} from "motion/react"
 
 const caladea = Caladea({
   subsets: ["latin"],
@@ -13,7 +16,24 @@ type DarkHeadingProps = {
 
 function DarkHeading({ children }: DarkHeadingProps) {
   return (
-    <h2 className={`${caladea.className} text-3xl`}>{children}</h2>
+    <motion.h2 
+        initial={{
+          opacity: 0,
+          x: "-100%"
+        }}
+
+        whileInView={{
+          opacity: 1,
+          x: 0
+        }}
+
+        transition={{
+          ease: easeIn,
+          duration: 0.6,
+          delay: 0.5
+        }}
+    
+    className={`${caladea.className} text-3xl`}>{children}</motion.h2>
   );
 }
 

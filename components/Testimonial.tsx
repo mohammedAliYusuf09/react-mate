@@ -1,7 +1,7 @@
 import ActionButton from "./ActionButton";
 import ContactButton from "./ContactButton";
 import DarkHeading from "./DarkHeading"
-import { Caladea, Mulish, Inter } from "next/font/google";
+import { Mulish } from "next/font/google";
 import TestimonialCart from "./TestimonialCart";
 
 import client1 from "@/public/assets/clients-image/client1.png"
@@ -16,14 +16,9 @@ import client9 from "@/public/assets/clients-image/client9.jpg"
 import client10 from "@/public/assets/clients-image/client10.jpg"
 import client11 from "@/public/assets/clients-image/client11.jpg"
 import client12 from "@/public/assets/clients-image/client12.jpg"
+import { StaticImageData } from "next/image";
 
 
-
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'], // Add weights you plan to use
-  display: 'swap',
-});
 
 
 const mulish = Mulish({
@@ -32,14 +27,10 @@ const mulish = Mulish({
   display: 'swap',
 });
 
-const caladea = Caladea({
-  subsets: ["latin"],
-  weight: ["400", "700"], // You can also add "italic", "700italic" if needed
-  display: "swap",
-});
+
 
 export interface TestimonialItem {
-  image: any;
+  image: StaticImageData;
   name: string;
   x_username: string;
   testimonial: string;
