@@ -49,13 +49,13 @@ function Navbar() {
     className={`${scrolled ? "fixed w-[100%] bg-white transform-[20%] z-50 shadow-xl" : ""} transition-all ease-in-out duration-300`}>
       <div className="h-12 xl:h-16 border-b border-[#DF8FD1] items-center" id="top">
       <div className="responsive-container flex justify-between h-full">
-         <p className={`flex items-center ${inter.className}"`}>
+         <a href="#hero" className={`flex items-center ${inter.className}"`}>
           <span className="bg-[var(--color-action)] text-white px-2 rounded-3xl">Reach</span>
           MATE
-        </p>
+        </a>
 
         <div className={`hidden md:flex items-center gap-3 ${mulish.className} text-[var(--color-des)] `}>
-          <a className="hover:text-gray-700 transition-colors ease-in duration-100" href="#top" >Hero</a>
+          <a className="hover:text-gray-700 transition-colors ease-in duration-100" href="#hero" >Hero</a>
           <a className="hover:text-gray-700 transition-colors ease-in duration-100" href="#services" >Services</a>
           <a className="hover:text-gray-700 transition-colors ease-in duration-100" href="#stories" >Stories</a>
           <a className="hover:text-gray-700 transition-colors ease-in duration-100" href="#portfolio" >Portfolio</a>
