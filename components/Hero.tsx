@@ -20,7 +20,7 @@ const mulish = Mulish({
 
 function Hero() {
   return (
-    <div className="bg-grid-white">
+    <div id="hero" className="bg-grid-white">
       <div className="responsive-container md:flex md:flex-row md:gap-2 md:h-[500px] lg:h-[600px] items-center overflow-hidden">
 
       <div className="md:w-[60%] flex flex-col gap-4 md:gap-8">

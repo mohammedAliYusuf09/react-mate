@@ -1,6 +1,6 @@
 "use client"
 
-import { Caladea, Mulish, Inter } from "next/font/google";
+import {  Mulish, Inter } from "next/font/google";
 import { StaticImageData } from "next/image";
 import CartWhy from "./CartWhy";
 import Confi from "@/public/assets/confi.png"
@@ -23,11 +23,6 @@ const mulish = Mulish({
   display: 'swap',
 });
 
-const caladea = Caladea({
-  subsets: ["latin"],
-  weight: ["700"], // You can also add "italic", "700italic" if needed
-  display: "swap",
-});
 
 
 export interface WhyCardData {

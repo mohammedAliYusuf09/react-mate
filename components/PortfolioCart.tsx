@@ -1,6 +1,3 @@
-import CharityWhite from "@/public/assets/charity-white.png"
-import CharityBlack from "@/public/assets/charity-black.png"
-import Image from "next/image"
 import { Mulish, Saira } from "next/font/google";
 import { PortfolioItem } from "./Portfolio";
 

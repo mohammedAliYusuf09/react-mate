@@ -58,7 +58,7 @@ const faqData: FAQItem[] = [
 
 function FAQCart() {
 
-  const [open, setOpen] = useState<number | null>(3);
+  const [open, setOpen] = useState<number | null>(null);
 
   const handleAddButtonClick = (idx: number) => {
     setOpen(open === idx ? null : idx);
