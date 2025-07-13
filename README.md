@@ -16,7 +16,11 @@ A modern, responsive, and conversion-focused landing page built for a fictional 
 
 ## 📸 Preview
 
+<<<<<<< HEAD
 ![Landing Page Preview](public/landing.png) <!-- Replace with actual screenshot if available -->
+=======
+![Landing Page Preview](./preview-image.png) <!-- Replace with actual screenshot if available -->
+>>>>>>> 8f86f8a4baae49686ed748e8e3f6db880f59d409
 
 ---
 
